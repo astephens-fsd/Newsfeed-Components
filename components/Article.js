@@ -119,13 +119,18 @@ const data = [
 
 function articleMaker({title, date, firstParagraph, secondParagraph, thirdParagraph}) {
   //Initiate all elements needed for article
-  const articleContainer = document.createElement('div');
+  const article = document.createElement('div');
   const articleTitle = document.createElement('h3');
   const articleParagraph = document.createElement('p');
   const artOpenButton = document.createElement('button');
   const artCloseButton = document.createElement('button');
 
   //Setup the structure of elements
-  
+  article.appendChild(articleTitle);
+  article.appendChild(articleParagraph);
+  article.appendChild(artOpenButton);
+  article.appendChild(artCloseButton);
 
+  //Add class names
+  
 }
